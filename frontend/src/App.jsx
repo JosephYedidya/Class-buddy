@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Cours from './pages/Cours';
 import Enseignants from './pages/Enseignants';
 import Etudiants from './pages/Etudiants';
+import Emplacements from './pages/Emplacements';
+import Statistiques from './pages/Statistiques';
+import Presence from './pages/Presence';
+import Examens from './pages/Examens';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,6 +46,18 @@ function App() {
                 <Link to="/etudiants" className="hover:bg-blue-700 dark:hover:bg-gray-700 px-4 py-2 rounded transition">
                   Étudiants
                 </Link>
+                <Link to="/emplacements" className="hover:bg-blue-700 dark:hover:bg-gray-700 px-4 py-2 rounded transition">
+                  Emploi du temps
+                </Link>
+                <Link to="/presences" className="hover:bg-blue-700 dark:hover:bg-gray-700 px-4 py-2 rounded transition">
+                  Presences
+                </Link>
+                <Link to="/examens" className="hover:bg-blue-700 dark:hover:bg-gray-700 px-4 py-2 rounded transition">
+                  Examens
+                </Link>
+                <Link to="/statistiques" className="hover:bg-blue-700 dark:hover:bg-gray-700 px-4 py-2 rounded transition">
+                  Statistiques
+                </Link>
                 <button
                   onClick={toggleDarkMode}
                   className="p-2 rounded-lg hover:bg-blue-700 dark:hover:bg-gray-700 transition"
@@ -68,6 +84,10 @@ function App() {
             <Route path="/" element={<Cours />} />
             <Route path="/enseignants" element={<Enseignants />} />
             <Route path="/etudiants" element={<Etudiants />} />
+            <Route path="/emplacements" element={<Emplacements />} />
+            <Route path="/presences" element={<Presence />} />
+            <Route path="/examens" element={<Examens />} />
+            <Route path="/statistiques" element={<Statistiques />} />
           </Routes>
         </div>
       </div>
