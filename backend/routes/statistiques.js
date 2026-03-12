@@ -12,10 +12,10 @@ router.get('/summary', async (req, res) => {
     
     // Basic counts
     const [totalCours, totalEtudiants, totalEnseignants, totalEmplacements] = await Promise.all([
-      Cours.countDocuments(annee ? { niveau: { $regex: annee } } : {}),
+Cours.countDocuments(),
       Etudiant.countDocuments(),
       Enseignant.countDocuments(),
-      Emplacement.countDocuments(annee ? { niveau: { $regex: annee } } : {})
+      Emplacement.countDocuments()
     ]);
 
     res.json({
