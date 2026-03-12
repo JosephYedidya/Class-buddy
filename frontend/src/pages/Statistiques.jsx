@@ -198,7 +198,7 @@ function Statistiques() {
                 </div>
                 <div className="p-3 bg-green-100 dark:bg-green-900 rounded-lg">
                   <div className="text-2xl font-bold text-green-600">{fillRate.distribution.low}</div>
-                  <div className="text-sm text-green-600">< 50%</div>
+                  <div className="text-sm text-green-600">{"< 50%"}</div>
                 </div>
                 <div className="p-3 bg-yellow-100 dark:bg-yellow-900 rounded-lg">
                   <div className="text-2xl font-bold text-yellow-600">{fillRate.distribution.medium}</div>
