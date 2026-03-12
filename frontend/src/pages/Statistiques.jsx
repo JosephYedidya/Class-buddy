@@ -76,6 +76,8 @@ function Statistiques() {
               onChange={(e) => setAnnee(e.target.value)}
               className="px-3 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg"
             >
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
               <option value="2024">2024</option>
               <option value="2023">2023</option>
               <option value="2022">2022</option>
